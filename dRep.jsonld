@@ -1,0 +1,75 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": "CIP119:image",
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "hashAlgorithm": "blake2b-256",
+  "body": {
+    "doNotList": false,
+    "givenName": "AndrewGoodson",
+    "motivations": "I want to be a dRep to help shape the future of Cardano by leveraging my experience in cybersecurity, cloud deployment, and decentralized technologies. My background in building secure, scalable solutions for diverse industries aligns with the core values of decentralization and community driven governance. As a long-time supporter of the Cardano ecosystem, I’m committed to fostering its growth and ensuring it remains a secure, decentralized platform for everyone.\n",
+    "objectives": "I believe in fostering a unified and collaborative Cardano ecosystem. My mission is to promote decentralization where it adds value and to drive meaningful network growth and activity. As a dRep, I aim to make informed decisions that empower the community and enhance Cardano’s potential as a truly decentralized and efficient platform.\n",
+    "paymentAddress": "addr_test1qq83qxrc0mdcn5nqukvz2ayxhskkwcneklqtdycdt93tdc0593nrzxutpn57evga8gahpdn9xedcvswn8pjn8zms0qlq2psgn9",
+    "qualifications": "Founder of VoltPool, producing blocks since Epoch 211 not missing a single Epoch in block production since than. With over 12 years of experience in cybersecurity, cloud deployment, and governance, I bring a deep understanding of decentralized systems. As a pool operator and contributor to the Cardano ecosystem, I have hands-on experience in blockchain technology. My expertise in compliance, governance, and secure cloud architectures positions me to make informed decisions that benefit both the network and the community as a dRep.\n",
+    "references": [
+      {
+        "@type": "Link",
+        "label": "Founder of VoltPool [VOLT]. Producing Blocks since Epoch 211.",
+        "uri": "https://x.com/Volt_Pool"
+      },
+      {
+        "@type": "Identity",
+        "label": "Technologist at heart, cloud security expert by day, and family man always.",
+        "uri": "https://www.linkedin.com/in/andrewgoodson/"
+      }
+    ]
+  }
+}
